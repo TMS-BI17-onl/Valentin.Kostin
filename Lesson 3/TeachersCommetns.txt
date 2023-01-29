@@ -1,0 +1,38 @@
+Well done!
+
+2
+a) Cost IS NULL, not IS NOT NULL.
+
+b)-0.5
+You don't have the parentheses in the WHERE clause. It gives you the incorrect result at all. OR condition messes up everything.
+Correct answer:
+...WHERE StandardPrice>10 
+		AND (Name LIKE '%X%'
+			OR 
+			Name LIKE 'N%')
+      
+c) -0.5
+It would be better to use DISTINCT, not GROUP BY to have unique rows. The result will be equal, but the query run - not.
+Also, it would be better to have ID IS NULL in WHERE clause, not qty. We never know can Qty column be null by itself.
+
+3
+a)-0.25
+ORDER BY is not needed.
+
+b)-1
+It's a typical task for UNION.
+Correct answer:
+SELECT Name
+FROM Purchasing.Vendor
+UNION
+SELECT Name
+FROM Sales.Store
+
+c)-1
+Correct answer:
+SELECT p.Name, COUNT(sp.SpecialOfferID) as cnt
+FROM Production.Product p JOIN sales.SpecialOfferProduct sp ON p.ProductID=sp.ProductID
+GROUP BY p.Name
+HAVING COUNT(sp.SpecialOfferID) >1
+
+Mark: 7
