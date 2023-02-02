@@ -1,0 +1,21 @@
+EX1
+SELECT Experience
+FROM Drivers
+WHERE Registration NOT LIKE 'eee' AND (Experience != '3' OR Experience != '5' OR Experience != '6' OR Experience != '10');
+
+EX2
+
+SELECT Pasport_ID
+FROM Drivers
+LEFT JOIN Control_office 
+ON Drivers.ID=Control_office.driver_code
+WHERE Rout IS <1 OR Rout IS NULL;
+
+EX3
+SELECT Cars.Car_reg_number, Control_office.departure_time, Control_office.arrival_trime, Rout.destination
+FROM Control_office
+LEFT JOIN Cars
+ON Control_office.car_id=Cars.car_id
+LEFT JOIN Rout
+ON Control_office.rout=Rout.rout_id
+WHERE Cars.car_year IS '2015';
