@@ -1,0 +1,24 @@
+Well done!
+
+4
+a) -0.25
+You were asked to find count, so it would be better to have a COUNT in the select. In that case GROUP BY would not be needed.
+
+b) -1
+You're filtering 3 max by top+order by. You don't need to add MAX . GROUP BY will also be cancelled then.
+
+c) -1
+You don't need product name or id. It should be just one weight and one size - two columns. Also, why did you decide to add a condition for weight in WHERE. 
+
+d) -1
+What was the reason of adding Weight and Color in GROUP BY? :(
+Also, don't use ORDER BY if it's not asked.
+
+e)-1
+The same.
+Also, color is not asked in the select, so it's not needed in the GROUP BY too.
+
+
+Please, stop editing tasks. You need to solve exactly what is stated.
+
+Mark:6
