@@ -19,3 +19,6 @@ ON Control_office.car_id=Cars.car_id
 LEFT JOIN Rout
 ON Control_office.rout=Rout.rout_id
 WHERE Cars.car_year IS '2015';
+
+
+Mark: 7
