@@ -37,9 +37,6 @@ FROM dbo.Patients
 WHERE Temp = Temp * 9 / 5 + 32;
 
 --Exercise 10
-SELECT ROUND(dbo.Patients.Temp,1)
-FROM dbo.Patients;
-
 CREATE FUNCTION F1(
 	@Temp DEC(5,1)
 )
