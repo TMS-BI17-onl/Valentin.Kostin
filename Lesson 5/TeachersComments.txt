@@ -1,0 +1,7 @@
+Well done!
+
+11
+-1
+You needed to detect the biggest repeating part of the code and rename it using variable.
+
+Mark: 9
