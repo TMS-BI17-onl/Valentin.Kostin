@@ -31,3 +31,5 @@ FROM HumanResources.Employee; */
 SELECT Name, Color, StandardCost
 FROM (SELECT Name, Color, StandardCost, MAX(StandardCost) OVER (PARTITION BY Color)  as max_cost FROM Production.Product) temp
 WHERE StandardCost=max_cost;
+
+Mark: 9
