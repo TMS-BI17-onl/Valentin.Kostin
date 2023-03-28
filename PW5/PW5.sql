@@ -50,3 +50,5 @@ WHERE Users.email = 'alex@gmail.com' AND is_read = false
 GROUP BY Notifications.category
 HAVING COUNT(Notifications.category) > 50
 ;
+
+Mark: 6
