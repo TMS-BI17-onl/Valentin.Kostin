@@ -1,0 +1,40 @@
+1. 2
+
+2. The system shows data from the table Employees without any changes
+
+3.  1 1 
+    2 2
+
+4.  1     1 
+    2     2
+    4     Null
+    Null  Null
+
+5.1. 
+	TotalPayment
+	120
+
+5.2. 
+	1- count of all rows, 2 - count of unique Col_1
+
+6. 
+	one to many
+
+7. 
+	many to many
+
+8. 
+	1NF
+
+9.  
+	AAA
+    	1AB
+
+10. 
+	1  John Doe
+	4  Bobby Louis
+	5  Lisa Romero
+
+11. select sum (x)
+    from table_1
+    where x >= 0 or x%5=0
